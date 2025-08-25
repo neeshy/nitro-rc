@@ -1,0 +1,2 @@
+#!/bin/sh
+# This is run by SYS before other services are started

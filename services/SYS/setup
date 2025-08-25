@@ -1,0 +1,14 @@
+#!/bin/sh
+. /etc/nitro-rc/functions
+. /etc/os-release
+
+msg "Welcome to $NAME!"
+
+# Start core services: one-time system tasks.
+for f in /etc/nitro-rc/sysinit.d/*.sh; do
+    [ -r "$f" ] && . "$f"
+done
+
+msg 'Initialization complete'
+
+[ -x /etc/rc.local ] && /etc/rc.local

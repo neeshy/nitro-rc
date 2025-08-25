@@ -1,0 +1,3 @@
+#!/bin/sh
+[ "$1" = tty1 ] && options=--noclear
+exec chpst -P -- agetty $options -- "$1" 38400 linux

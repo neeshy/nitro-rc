@@ -1,0 +1,6 @@
+dmesg >/var/log/dmesg.log
+if [ -r /proc/sys/kernel/dmesg_restrict ] && [ "$(cat /proc/sys/kernel/dmesg_restrict)" = 1 ]; then
+    chmod 0600 /var/log/dmesg.log
+else
+    chmod 0644 /var/log/dmesg.log
+fi

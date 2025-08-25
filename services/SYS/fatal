@@ -1,0 +1,3 @@
+#!/bin/sh
+. /etc/nitro-rc/functions
+emergency_shell
