@@ -3,6 +3,7 @@ install:
 	install -Dm644 -t ${DESTDIR}/etc/nitro-rc/shutdown.d shutdown.d/*.sh
 	install -Dm644 functions ${DESTDIR}/etc/nitro-rc/functions
 	install -Dm755 -t ${DESTDIR}/etc rc.local rc.shutdown
+	install -Dm644 login.local ${DESTDIR}/etc/login.local
 	install -Dm755 services/SYS/setup ${DESTDIR}/etc/nitro/SYS/setup
 	install -Dm755 services/SYS/final ${DESTDIR}/etc/nitro/SYS/final
 	install -Dm755 services/SYS/fatal ${DESTDIR}/etc/nitro/SYS/fatal
