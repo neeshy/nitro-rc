@@ -11,6 +11,7 @@ install:
 	install -Dm755 services/agetty@/finish ${DESTDIR}/etc/nitro/agetty@/finish
 	install -Dm755 services/sulogin/run ${DESTDIR}/etc/nitro/sulogin/run
 	install -Dm644 services/sulogin/down ${DESTDIR}/etc/nitro/sulogin/down
+	install -Dm755 services/mdevd/run ${DESTDIR}/etc/nitro/mdevd/run
 	for n in 1 2 3 4 5 6; do \
 		ln -sfn agetty@ ${DESTDIR}/etc/nitro/agetty@tty$$n; \
 	done
