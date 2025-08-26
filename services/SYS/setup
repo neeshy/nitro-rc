@@ -1,8 +1,8 @@
 #!/bin/sh
 . /etc/nitro-rc/functions
-. /etc/os-release
 
-msg "Welcome to $NAME!"
+[ -r /etc/os-release ] && . /etc/os-release
+msg "Welcome${NAME:+ to $NAME}!"
 
 # Start core services: one-time system tasks.
 for f in /etc/nitro-rc/sysinit.d/*.sh; do
