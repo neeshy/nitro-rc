@@ -13,6 +13,6 @@ install:
 	for n in 1 2 3 4 5 6; do \
 		ln -sfn agetty@ ${DESTDIR}/etc/nitro/agetty@tty$$n; \
 	done
-	install -Dm755 services/sulogin/run ${DESTDIR}/etc/single/sulogin/run
-	ln -sfn ../nitro/SYS ${DESTDIR}/etc/single/SYS
-	ln -sfn ../nitro/mdevd ${DESTDIR}/etc/single/mdevd
+	install -Dm755 services/sulogin/run ${DESTDIR}/etc/nitro.single/sulogin/run
+	ln -sfn ../nitro/SYS ${DESTDIR}/etc/nitro.single/SYS
+	ln -sfn ../nitro/mdevd ${DESTDIR}/etc/nitro.single/mdevd

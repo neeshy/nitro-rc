@@ -23,10 +23,10 @@ This project is based on https://github.com/neeshy/runit-rc
 Place any of your own services in `/etc/nitro`.
 Refer to the documentation of `nitro` for further details on the required directory structure.
 
-A runlevel for single-user mode is provided at `/etc/single`.
-You may append ` -- /etc/single` to the kernel command line to execute this runlevel on startup.
+A runlevel for single-user mode is provided at `/etc/nitro.single`.
+You may append ` -- single` to the kernel command line to execute this runlevel on startup.
 Depending on the initramfs being used, this command line parameter will differ.
-For example, on Alpine Linux you must pass `KOPT_init_args=/etc/single`.
+For example, on Alpine Linux you must pass `KOPT_init_args=single`.
 Refer to your distribution's initramfs documentation for further details.
 
 ## Copyright
