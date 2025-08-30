@@ -1,4 +1,4 @@
 #!/bin/sh
 [ -r /etc/login.local ] && . /etc/login.local
 [ "$1" = tty1 ] && options=--noclear
-exec chpst -P -- agetty $options -- "$1" 38400 linux
+exec agetty $options -- "$1" 38400 linux
