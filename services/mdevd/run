@@ -1,3 +1,3 @@
 #!/bin/sh
 exec >/dev/null 2>&1
-exec mdevd -C -O 4
+exec mdevd -C -D 3 -O 4

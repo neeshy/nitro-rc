@@ -10,6 +10,7 @@ install:
 	install -Dm755 services/agetty@/run ${DESTDIR}/etc/nitro/agetty@/run
 	install -Dm755 services/agetty@/finish ${DESTDIR}/etc/nitro/agetty@/finish
 	install -Dm755 services/mdevd/run ${DESTDIR}/etc/nitro/mdevd/run
+	install -Dm644 services/mdevd/notification-fd ${DESTDIR}/etc/nitro/mdevd/notification-fd
 	for n in 1 2 3 4 5 6; do \
 		ln -sfn agetty@ ${DESTDIR}/etc/nitro/agetty@tty$$n; \
 	done
